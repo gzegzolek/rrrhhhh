@@ -60,8 +60,6 @@ class CfgRemoteExec {
         F(life_fnc_wantedList,CLIENT)
         F(life_fnc_handleDowned,CLIENT)
         F(life_fnc_wireTransfer,CLIENT)
-		F(life_fnc_vehicleEmpd,CLIENT)
-		F(life_fnc_vehicleWarned,CLIENT)
         F(SOCK_fnc_dataQuery,CLIENT)
         F(SOCK_fnc_insertPlayerInfo,CLIENT)
         F(SOCK_fnc_requestReceived,CLIENT)
@@ -74,7 +72,6 @@ class CfgRemoteExec {
         F(life_fnc_setupCellPhone,CLIENT)
         F(TON_fnc_player_query,CLIENT)
         F(life_fnc_vAH_reciever,CLIENT)
-		F(life_fnc_Lizenzsehen,CLIENT)
         F(life_fnc_civRestrain,CLIENT)
         F(life_fnc_medicrestrain,CLIENT)
 		F(life_fnc_hasOrgan,CLIENT)
@@ -83,9 +80,6 @@ class CfgRemoteExec {
         F(life_fnc_teargas,CLIENT)
         F(life_fnc_nitro,CLIENT)
         F(life_fnc_masked,CLIENT)
-		F(seizePlayerWeaponAction,CLIENT)
-		
-			
 
         /* Server only functions */
         F(BIS_fnc_execVM,SERVER)
@@ -101,6 +95,10 @@ class CfgRemoteExec {
         F(life_fnc_wantedProfUpdate,SERVER)
         F(life_fnc_wantedRemove,SERVER)
         F(SPY_fnc_cookieJar,SERVER)
+
+		F(TON_fnc_getupdate,SERVER)
+		F(TON_fnc_playerlogged,SERVER)
+		 
         F(SPY_fnc_observe,SERVER)
         F(TON_fnc_addContainer,SERVER)
         F(TON_fnc_addHouse,SERVER)
@@ -128,16 +126,10 @@ class CfgRemoteExec {
         F(TON_fnc_vehicleStore,SERVER)
         F(TON_fnc_vehicleUpdate,SERVER)
         F(DB_fnc_cellPhoneRequest,SERVER)
-		F(DB_fnc_saveCellPhone,SERVER)
+		    F(DB_fnc_saveCellPhone,SERVER)
         F(TON_fnc_vAH_update,SERVER)
-		F(TON_fnc_vAH_init,SERVER)
-		F(TON_fnc_getUpdate,SERVER)
-		F(TON_fnc_changePrice,SERVER)
-        
-		F(bis_fnc_curatorrespawn,SERVER)
-        
-        
-		
+		    F(TON_fnc_vAH_init,SERVER)
+        F(TON_fnc_changePrice,SERVER)
 
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)
@@ -191,9 +183,6 @@ class CfgRemoteExec {
         F(life_fnc_simDisable,ANYONE)
         F(SPY_fnc_notifyAdmins,ANYONE)
         F(life_fnc_clientSound,ANYONE)
-		F(life_fnc_armageddon,ANYONE)
-		F(life_fnc_copmedicrequest,ANYONE)
-		F(TON_fnc_playerLogged,ANYONE)
     };
 
     class Commands {
